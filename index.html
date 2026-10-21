@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Store</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<header>
+    <div class="navbar">
+        <a class="logo" href="./index.html"> Digital Store</a>
+
+        <input type="text" id="search" placeholder="Mahsulot qidirish...">
+
+        <a href="./cart.html" class="cart">🛒 Savatcha (<span id="count">0</span>)</a>
+    </div>
+
+    <nav>
+        <a class="active" href="./index.html">Bosh sahifa</a>
+        <a href="./catgory.html">Mahsulotlar</a>
+        <a href="./catgory.html">Kategoriyalar</a>
+        <a href="./cart.html">Buyurtmalarim</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-text">
+        <p class="pink">Siz uchun maxsus takliflar</p>
+        <h1 id="banner-title">Nike chegirmalari boshlandi 🔥</h1>
+        <p>Sevimli krossovkalaringizni qulay narxlarda xarid qiling.</p>
+        <a class="btn" href="./catgory.html">Takliflarni ko‘rish</a>
+    </div>
+
+    <div class="hero-image">
+        <img id="banner-img" src="./White-Sneakers-PNG-Clipart 1.png"
+             alt="Sport krossovkasi">
+    </div>
+    <div class="dots">
+        <button onclick="slide(0)">●</button>
+        <button onclick="slide(1)">●</button>
+        <button onclick="slide(2)">●</button>
+    </div>
+</section>
+
+<section class="products">
+    <h2>Ommabop mahsulotlar</h2>
+
+    <div class="product-grid">
+        <div class="product">
+            <img src="./White-Sneakers-PNG-Clipart 2.png" alt="Oq-qizil krossovka">
+            <p>Sport oyoq kiyimi</p>
+            <h3>Nike Revolution 6</h3>
+            <strong>219 000 so‘m</strong>
+            <button onclick="addCart('Nike Revolution 6',219000,'assets/nike-qizil-yon.jpg')">
+                Savatchaga qo‘shish
+            </button>
+        </div>
+
+        <div class="product">
+            <img src="./White-Sneakers-PNG-Clipart 2.png" alt="Sport krossovkasi">
+            <p>Sport oyoq kiyimi</p>
+            <h3>Sport krossovkasi</h3>
+            <strong>199 000 so‘m</strong>
+            <button onclick="addCart('Sport krossovkasi',199000,'assets/sport-krossovka.jpg')">
+                Savatchaga qo‘shish
+            </button>
+        </div>
+
+        <div class="product">
+            <img src="./White-Sneakers-PNG-Clipart 2.png" alt="Yengil krossovka">
+            <p>Yangi mahsulot</p>
+            <h3>Yengil krossovka</h3>
+            <strong>229 000 so‘m</strong>
+            <button onclick="addCart('Yengil krossovka',229000,'assets/nike-qizil-yon.jpg')">
+                Savatchaga qo‘shish
+            </button>
+        </div>
+
+        <div class="product">
+            <img src="./White-Sneakers-PNG-Clipart 2.png" alt="Zamonaviy oyoq kiyim">
+            <p>Sport oyoq kiyimi</p>
+            <h3>Zamonaviy krossovka</h3>
+            <strong>189 000 so‘m</strong>
+            <button onclick="addCart('Zamonaviy krossovka',189000,'assets/sport-krossovka.jpg')">
+                Savatchaga qo‘shish
+            </button>
+        </div>
+    </div>
+</section>
+
+<footer>© 2026 Digital Store | Barcha huquqlar himoyalangan</footer>
+
+<script src="./script.js"></script>
+</body>
+</html>
