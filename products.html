@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mahsulotlar — Digital Store</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="topbar container">
+    <a href="./index.html" class="logo"><span>›</span> Digital Store</a>
+    <form class="search" action="./products.html" method="get">
+      <input type="search" name="q" placeholder="Mahsulot qidirish...">
+      <button aria-label="Qidirish">⌕</button>
+    </form>
+    <a href="#contact" class="register">Bog‘lanish</a>
+    <a href="./products.html" class="login">Xarid qilish ↗</a>
+  </div>
+  <nav class="nav container">
+    <a href="./index.html">Bosh sahifa</a>
+    <a class="active" href="./products.html">Mahsulotlar</a>
+    <a href="./index.html">Kategoriyalar</a>
+    <a href="#contact">Biz haqimizda</a>
+  </nav>
+</header>
+
+<main class="catalog-page container">
+  <div class="breadcrumb"><a href="./index.html">Bosh sahifa</a> / Mahsulotlar</div>
+
+  <div class="page-heading">
+    <div><span class="eyebrow">DIGITAL STORE COLLECTION</span><h1>Barcha mahsulotlar</h1><p>O‘zingga mos uslubni shu yerdan top.</p></div>
+    <span class="catalog-count">08 TA TANLOV</span>
+  </div>
+
+  <div class="catalog-layout">
+    <aside class="filters">
+      <h3>Filtrlash <span>☷</span></h3>
+      <div class="filter-group">
+        <h4>Kategoriya</h4>
+        <a href="./products.html" class="filter-link selected">Barcha mahsulotlar <span>08</span></a>
+        <a href="#shoes" class="filter-link">Krossovkalar <span>04</span></a>
+        <a href="#clothes" class="filter-link">Kiyimlar <span>01</span></a>
+        <a href="#accessories" class="filter-link">Aksessuarlar <span>02</span></a>
+        <a href="#tech" class="filter-link">Texnika <span>01</span></a>
+      </div>
+      <div class="filter-group">
+        <h4>Narx oralig‘i</h4>
+        <p class="filter-note">50 000 — 500 000 so‘m</p>
+        <div class="price-line"></div>
+      </div>
+      <div class="filter-group">
+        <h4>Brend</h4>
+        <label><input type="checkbox"> Nike</label>
+        <label><input type="checkbox"> Adidas</label>
+        <label><input type="checkbox"> K-Swiss</label>
+        <label><input type="checkbox"> Air Jordan</label>
+      </div>
+      <div class="filter-group">
+        <h4>Takliflar</h4>
+        <label><input type="checkbox"> Chegirmadagilar</label>
+        <label><input type="checkbox"> Yangi mahsulotlar</label>
+      </div>
+      <a href="./products.html" class="reset-filter">Filtrlarni tozalash ↻</a>
+      <p class="filter-disclaimer">Filtrlar hozircha dizayn namunasi. Haqiqiy filtrlash uchun JavaScript yoki server kerak.</p>
+    </aside>
+
+    <section class="catalog-results">
+      <div class="catalog-toolbar"><span>Tanlangan mahsulotlar</span><span>Yangi kolleksiya ↗</span></div>
+      <div class="product-grid catalog-grid" id="shoes">
+        <a href="./product.html" class="product-card">
+          <div class="product-image"><span class="discount">−30%</span><span class="heart">♡</span><img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=650&q=85" alt="Nike Air Sport"></div>
+          <div class="product-info"><small>KROSSOVKALAR</small><h3>Nike Air Sport</h3><div class="price"><del>320 000</del><b>219 000 so‘m</b></div><span class="quick-link">Batafsil ko‘rish ↗</span></div>
+        </a>
+        <a href="./product.html" class="product-card">
+          <div class="product-image"><span class="discount">−30%</span><span class="heart">♡</span><img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=650&q=85" alt="K-Swiss V8"></div>
+          <div class="product-info"><small>KROSSOVKALAR</small><h3>K-Swiss V8</h3><div class="price"><del>200 000</del><b>100 000 so‘m</b></div><span class="quick-link">Batafsil ko‘rish ↗</span></div>
+        </a>
+        <a href="./product.html" class="product-card">
+          <div class="product-image"><span class="discount">−25%</span><span class="heart">♡</span><img src="https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=650&q=85" alt="Air Jordan Classic"></div>
+          <div class="product-info"><small>KROSSOVKALAR</small><h3>Air Jordan Classic</h3><div class="price"><del>400 000</del><b>289 000 so‘m</b></div><span class="quick-link">Batafsil ko‘rish ↗</span></div>
+        </a>
+        <a href="./product.html" class="product-card">
+          <div class="product-image"><span class="discount">−20%</span><span class="heart">♡</span><img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=650&q=85" alt="Urban Runner"></div>
+          <div class="product-info"><small>KROSSOVKALAR</small><h3>Urban Runner</h3><div class="price"><del>250 000</del><b>199 000 so‘m</b></div><span class="quick-link">Batafsil ko‘rish ↗</span></div>
+        </a>
+        <a href="./product.html" class="product-card" id="clothes">
+          <div class="product-image"><span class="discount">−20%</span><span class="heart">♡</span><img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=650&q=85" alt="Urban Hoodie"></div>
+          <div class="product-info"><small>KIYIMLAR</small><h3>Urban Hoodie</h3><div class="price"><del>220 000</del><b>159 000 so‘m</b></div><span class="quick-link">Batafsil ko‘rish ↗</span></div>
+        </a>
+        <a href="./product.html" class="product-card" id="accessories">
+          <div class="product-image"><span class="discount">−25%</span><span class="heart">♡</span><img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=650&q=85" alt="Quloqchin"></div>
+          <div class="product-info"><small>AKSESSUARLAR</small><h3>Classic Headphones</h3><div class="price"><del>180 000</del><b>129 000 so‘m</b></div><span class="quick-link">Batafsil ko‘rish ↗</span></div>
+        </a>
+        <a href="./product.html" class="product-card">
+          <div class="product-image"><span class="discount">−20%</span><span class="heart">♡</span><img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=650&q=85" alt="Ryukzak"></div>
+          <div class="product-info"><small>AKSESSUARLAR</small><h3>Minimal Backpack</h3><div class="price"><del>190 000</del><b>145 000 so‘m</b></div><span class="quick-link">Batafsil ko‘rish ↗</span></div>
+        </a>
+        <a href="./product.html" class="product-card" id="tech">
+          <div class="product-image"><span class="discount">−20%</span><span class="heart">♡</span><img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=650&q=85" alt="Smart soat"></div>
+          <div class="product-info"><small>TEXNIKA</small><h3>Smart Watch Sport</h3><div class="price"><del>320 000</del><b>249 000 so‘m</b></div><span class="quick-link">Batafsil ko‘rish ↗</span></div>
+        </a>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="footer" id="contact">
+  <div class="container footer-grid">
+    <div class="footer-brand"><a href="./index.html" class="logo footer-logo"><span>›</span> Digital Store</a><p>Zamonaviy tanlov, o‘ziga xos uslub va yoqimli xarid tajribasi.</p><div class="socials"><a href="https://instagram.com/">ig</a><a href="https://t.me/@Afruzm777">tg</a><a href="https://youtube.com/">yt</a></div></div>
+    <div><h4>Ma’lumot</h4><a href="./index.html">Bosh sahifa</a><a href="./products.html">Mahsulotlar</a><a href="#categories">Kategoriyalar</a><a href="#contact">Biz haqimizda</a></div>
+    <div><h4>Xizmatlar</h4><a href="./products.html">Yangi mahsulotlar</a><a href="./products.html">Chegirmalar</a><a href="./products.html">Ommabop tanlovlar</a></div>
+    <div><h4>Biz bilan bog‘lanish</h4><p>Toshkent, O‘zbekiston</p><a href="tel:+998889140330">+998 88 914 03 30</a><a href="mailto:rashitovafruz@gmail.com">info@digitalstore.uz</a><a href="https://t.me/@Afruzm777">Telegram orqali yozish ↗</a></div>
+  </div>
+  <div class="container footer-bottom"><span>© 2026 Digital Store. Barcha huquqlar himoyalangan.</span><a href="#top">Yuqoriga ↑</a></div>
+</footer>
+
+</body>
+</html>

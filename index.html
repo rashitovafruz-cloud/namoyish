@@ -1,97 +1,143 @@
+
 <!DOCTYPE html>
 <html lang="uz">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Store</title>
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Store — Zamonaviy xaridlar</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
-<header>
-    <div class="navbar">
-        <a class="logo" href="./index.html"> Digital Store</a>
+<header class="header">
+  <div class="topbar container">
+    <a href="./index.html" class="logo"><span>›</span> Digital Store</a>
 
-        <input type="text" id="search" placeholder="Mahsulot qidirish...">
+    <form class="search" action="./products.html" method="get">
+      <input type="search" name="q" placeholder="Mahsulot qidirish...">
+      <button aria-label="Qidirish">⌕</button>
+    </form>
 
-        <a href="./cart.html" class="cart">🛒 Savatcha (<span id="count">0</span>)</a>
-    </div>
+    <a class="register" href="#contact">Bog‘lanish</a>
+    <a href="./products.html" class="login">Xarid qilish ↗</a>
+  </div>
 
-    <nav>
-        <a class="active" href="./index.html">Bosh sahifa</a>
-        <a href="./catgory.html">Mahsulotlar</a>
-        <a href="./catgory.html">Kategoriyalar</a>
-        <a href="./cart.html">Buyurtmalarim</a>
-    </nav>
+  <nav class="nav container">
+    <a class="active" href="./index.html">Bosh sahifa</a>
+    <a href="./products.html">Mahsulotlar</a>
+    <a href="./products.html">Kategoriyalar</a>
+    <a href="./index.html">Biz haqimizda</a>
+  </nav>
 </header>
 
-<section class="hero">
-    <div class="hero-text">
-        <p class="pink">Siz uchun maxsus takliflar</p>
-        <h1 id="banner-title">Nike chegirmalari boshlandi 🔥</h1>
-        <p>Sevimli krossovkalaringizni qulay narxlarda xarid qiling.</p>
-        <a class="btn" href="./catgory.html">Takliflarni ko‘rish</a>
+<main>
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <span class="eyebrow"><i></i> SIZ UCHUN MAXSUS TAKLIFLAR</span>
+        <h1>Uslubingni<br>yangila<span class="pink">.</span> 🔥</h1>
+        <p>Sevimli mahsulotlaring, zamonaviy uslub va ajoyib narxlar — barchasi bir joyda.</p>
+        <div class="hero-buttons">
+          <a href="./products.html" class="btn">Xaridni boshlash <span>↗</span></a>
+          <a href="#collections" class="text-link">Kolleksiyalarni ko‘rish ↓</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>100+</strong><small>Mahsulotlar</small></div>
+          <div><strong>24/7</strong><small>Onlayn do‘kon</small></div>
+          <div><strong>−30%</strong><small>Maxsus chegirma</small></div>
+        </div>
+      </div>
+
+      <a class="hero-art" href="./product.html" aria-label="Nike krossovkasini ko‘rish">
+        <div class="hero-circle"></div>
+        <span class="floating-label">NEW COLLECTION</span>
+        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1000&q=90" alt="Qizil aksentli sport krossovka">
+        <span class="hero-price">TOP TANLOV <b>↗</b></span>
+      </a>
+    </div>
+    <div class="hero-dots"><i></i><i></i><i></i><i></i></div>
+  </section>
+
+  <section class="section container" id="collections">
+    <div class="section-heading">
+      <div><span class="eyebrow">SIZ UCHUN TANLANDI</span><h2>Trenddagi kolleksiyalar</h2></div>
+      <a href="./products.html" class="view-link">Barchasini ko‘rish ↗</a>
     </div>
 
-    <div class="hero-image">
-        <img id="banner-img" src="./White-Sneakers-PNG-Clipart 1.png"
-             alt="Sport krossovkasi">
+    <div class="collection-grid">
+      <a href="./products.html" class="collection collection-one">
+        <span class="sale-pill">−30% CHEGIRMA</span>
+        <div><small>YANGI MAVSUM</small><h3>Streetwear<br>Collection</h3><span class="collection-link">Ko‘rish ↗</span></div>
+        <img src="https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=600&q=85" alt="Streetwear krossovka">
+      </a>
+      <a href="./products.html" class="collection collection-two">
+        <span class="sale-pill">TRENDDA</span>
+        <div><small>SPORT USLUBI</small><h3>Move with<br>confidence</h3><span class="collection-link">Ko‘rish ↗</span></div>
+        <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=600&q=85" alt="Sport krossovka">
+      </a>
+      <a href="./products.html" class="collection collection-three">
+        <span class="sale-pill">TOP TANLOV</span>
+        <div><small>AKSESSUARLAR</small><h3>Daily<br>Essentials</h3><span class="collection-link">Ko‘rish ↗</span></div>
+        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=85" alt="Quloqchin">
+      </a>
     </div>
-    <div class="dots">
-        <button onclick="slide(0)">●</button>
-        <button onclick="slide(1)">●</button>
-        <button onclick="slide(2)">●</button>
-    </div>
-</section>
+  </section>
 
-<section class="products">
-    <h2>Ommabop mahsulotlar</h2>
+  <section class="section container" id="categories">
+    <div class="section-heading centered">
+      <div><span class="eyebrow">O‘ZINGGA MOSINI TANLA</span><h2>Ommabop kategoriyalar</h2></div>
+    </div>
+    <div class="category-grid">
+      <a href="./products.html" class="category-card"><span>👟</span><b>Krossovkalar</b><small>Sport va kundalik</small></a>
+      <a href="./products.html" class="category-card"><span>👕</span><b>Kiyimlar</b><small>O‘ziga xos uslub</small></a>
+      <a href="./products.html" class="category-card"><span>🎧</span><b>Aksessuarlar</b><small>Har kun uchun</small></a>
+      <a href="./products.html" class="category-card"><span>⌚</span><b>Texnika</b><small>Zamonaviy tanlov</small></a>
+    </div>
+  </section>
+
+  <section class="section container">
+    <div class="section-heading">
+      <div><span class="eyebrow">ENG KO‘P TANLANGANLAR</span><h2>Ommabop mahsulotlar</h2></div>
+      <a href="./products.html" class="view-link">Barcha mahsulotlar →</a>
+    </div>
 
     <div class="product-grid">
-        <div class="product">
-            <img src="./White-Sneakers-PNG-Clipart 2.png" alt="Oq-qizil krossovka">
-            <p>Sport oyoq kiyimi</p>
-            <h3>Nike Revolution 6</h3>
-            <strong>219 000 so‘m</strong>
-            <button onclick="addCart('Nike Revolution 6',219000,'assets/nike-qizil-yon.jpg')">
-                Savatchaga qo‘shish
-            </button>
-        </div>
-
-        <div class="product">
-            <img src="./White-Sneakers-PNG-Clipart 2.png" alt="Sport krossovkasi">
-            <p>Sport oyoq kiyimi</p>
-            <h3>Sport krossovkasi</h3>
-            <strong>199 000 so‘m</strong>
-            <button onclick="addCart('Sport krossovkasi',199000,'assets/sport-krossovka.jpg')">
-                Savatchaga qo‘shish
-            </button>
-        </div>
-
-        <div class="product">
-            <img src="./White-Sneakers-PNG-Clipart 2.png" alt="Yengil krossovka">
-            <p>Yangi mahsulot</p>
-            <h3>Yengil krossovka</h3>
-            <strong>229 000 so‘m</strong>
-            <button onclick="addCart('Yengil krossovka',229000,'assets/nike-qizil-yon.jpg')">
-                Savatchaga qo‘shish
-            </button>
-        </div>
-
-        <div class="product">
-            <img src="./White-Sneakers-PNG-Clipart 2.png" alt="Zamonaviy oyoq kiyim">
-            <p>Sport oyoq kiyimi</p>
-            <h3>Zamonaviy krossovka</h3>
-            <strong>189 000 so‘m</strong>
-            <button onclick="addCart('Zamonaviy krossovka',189000,'assets/sport-krossovka.jpg')">
-                Savatchaga qo‘shish
-            </button>
-        </div>
+      <a href="./product.html" class="product-card">
+        <div class="product-image"><span class="discount">−30%</span><span class="heart">♡</span><img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=650&q=85" alt="Sport krossovka"></div>
+        <div class="product-info"><small>KROSSOVKALAR</small><h3>Nike Air Sport</h3><div class="price"><del>320 000</del><b>219 000 so‘m</b></div><span class="quick-link">Mahsulotni ko‘rish ↗</span></div>
+      </a>
+      <a href="./product.html" class="product-card">
+        <div class="product-image"><span class="discount">−30%</span><span class="heart">♡</span><img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=650&q=85" alt="Oq sport krossovka"></div>
+        <div class="product-info"><small>KROSSOVKALAR</small><h3>K-Swiss V8</h3><div class="price"><del>200 000</del><b>100 000 so‘m</b></div><span class="quick-link">Mahsulotni ko‘rish ↗</span></div>
+      </a>
+      <a href="./product.html" class="product-card">
+        <div class="product-image"><span class="discount">−25%</span><span class="heart">♡</span><img src="https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=650&q=85" alt="Kundalik krossovka"></div>
+        <div class="product-info"><small>KROSSOVKALAR</small><h3>Air Jordan Classic</h3><div class="price"><del>400 000</del><b>289 000 so‘m</b></div><span class="quick-link">Mahsulotni ko‘rish ↗</span></div>
+      </a>
+      <a href="./product.html" class="product-card">
+        <div class="product-image"><span class="discount">−20%</span><span class="heart">♡</span><img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=650&q=85" alt="Zamonaviy sport oyoq kiyimi"></div>
+        <div class="product-info"><small>KROSSOVKALAR</small><h3>Urban Runner</h3><div class="price"><del>250 000</del><b>199 000 so‘m</b></div><span class="quick-link">Mahsulotni ko‘rish ↗</span></div>
+      </a>
     </div>
-</section>
+  </section>
 
-<footer>© 2026 Digital Store | Barcha huquqlar himoyalangan</footer>
+  <section class="wide-promo">
+    <div class="container wide-promo-inner">
+      <div><span class="eyebrow">DIGITAL STORE TANLOVI</span><h2>Yangi uslub.<br>Yangi kayfiyat.</h2><p>O‘zingga mos mahsulotni tanla va uslubingni namoyish et.</p><a href="products.html" class="btn">Kolleksiyani ko‘rish ↗</a></div>
+      <img src="https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=900&q=90" alt="Tanlangan krossovka">
+    </div>
+  </section>
+</main>
 
-<script src="./script.js"></script>
+<footer class="footer" id="contact">
+  <div class="container footer-grid">
+    <div class="footer-brand"><a href="./index.html" class="logo footer-logo"><span>›</span> Digital Store</a><p>Zamonaviy tanlov, o‘ziga xos uslub va yoqimli xarid tajribasi.</p><div class="socials"><a href="https://instagram.com/">ig</a><a href="https://t.me/@Afruzm777">tg</a><a href="https://youtube.com/">yt</a></div></div>
+    <div><h4>Ma’lumot</h4><a href="./index.html">Bosh sahifa</a><a href="./products.html">Mahsulotlar</a><a href="#categories">Kategoriyalar</a><a href="#contact">Biz haqimizda</a></div>
+    <div><h4>Xizmatlar</h4><a href="./products.html">Yangi mahsulotlar</a><a href="./products.html">Chegirmalar</a><a href="./products.html">Ommabop tanlovlar</a></div>
+    <div><h4>Biz bilan bog‘lanish</h4><p>Toshkent, O‘zbekiston</p><a href="tel:+998889140330">+998 88 914 03 30</a><a href="mailto:rashitovafruz@gmail.com">info@digitalstore.uz</a><a href="https://t.me/@Afruzm777">Telegram orqali yozish ↗</a></div>
+  </div>
+  <div class="container footer-bottom"><span>© 2026 Digital Store. Barcha huquqlar himoyalangan.</span><a href="#top">Yuqoriga ↑</a></div>
+</footer>
+
 </body>
 </html>
